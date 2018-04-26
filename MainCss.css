@@ -48,8 +48,13 @@ body{
 }
 
 @media screen and (max-width: 420px) {
-  .Main-Text{
-    width: 420%;
+  .Main-text{
+    left:0px;
+    right: 0px;
+    margin:0px;    
+    width: 100%;
+    padding: 10%;
+    max-width: 420px;
     padding-left:0px;
     padding-right:0px;
     font-size: 1.6em;
