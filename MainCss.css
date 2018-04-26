@@ -46,3 +46,12 @@ body{
   left: 0px;
   right: 0px;
 }
+
+@media screen and (min-width: 600px) {
+  .Main-Text{
+    width: 100%;
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 1.6em;
+  }
+}
