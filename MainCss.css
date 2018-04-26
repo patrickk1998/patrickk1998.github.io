@@ -47,11 +47,16 @@ body{
   right: 0px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 420px) {
   .Main-Text{
-    width: 100%;
+    width: 420%;
     padding-left:0px;
     padding-right:0px;
     font-size: 1.6em;
+  }
+  
+  .background-img{
+    width:420px;
+    height:420px;
   }
 }
