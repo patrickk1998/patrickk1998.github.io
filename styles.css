@@ -2,6 +2,11 @@ p{
 font-family: "Helvetica", sans-serif;
 }
 
+li{
+font-family: "Helvetica", sans-serif;
+margin: 5px;
+}
+
 .main{
 margin:15px;
 max-width:800px;

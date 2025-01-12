@@ -5,7 +5,7 @@
 	<title>About · Patrick Krusiec</title>
 	<meta charset="utf-8">
 	<meta name="description" content="I am Patrick Krusiec, an undergraduate passionate about 
-	distributed computing, computer architecture, and operating systems.">
+distributed computing, computer architecture, and operating systems.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
@@ -13,13 +13,32 @@
 		<img src="profile.jpeg" height="240px">
 		<p>
 			Hello! My name is Patrick Krusiec. I am currently an undergraduate studying Computer Science and Mathematics at 
-			Northern Illinois University. My software interests presently are focused on distributed computing,
+			Northern Illinois University. My software interests presently are generally focused on distributed computing,
 			computer architecture and security,	and operating systems.
 		</p>
 		<p>
 			I am always happy to talk about software, math, and interesting problems. Please contact me at patrick.krusiec@gmail.com.
 			I can be found on <a href="https://github.com/patrickk1998">Github</a> and 
 			<a href="www.linkedin.com/in/patrick-krusiec">LinkedIn</a>.
+		</p>
+		<p> 
+			Currently, my main object of attention is <b>Rust in the Linux Kernel</b> centered on, but not limited to, file system drivers. Other 
+			topics I allocate attention to are:
+			<ul>
+  				<li>
+				How has the combination of (a) the breakdown of Dennard scaling preventing increases in CPU clock speed and 
+				(b) sublinear increases in single-threaded performance when CPU clock speed is kept fixed while transistor counts increase affected software?
+				The most obvious effects are the rise of multi-threading to make use of muli-core CPUs and the use of coprocessors such as GPUs along with their 
+				associated drivers and APIs, such as CUDA. But is this it? Or will future software seem very bizarre to us in the present day in order make use of 
+				massively parallel computers?
+				</li>
+  				<li>
+				What is the best way to build an operating system? Microkernels were all the rage back in the 1980s, remember <a href="https://www.gnu.org/software/hurd/">GNU Hurd</a>? 
+				Today the dominant paradigm is a monolith kernel (Linux) with some sort of hypervisor and container system, but is this optimal? Of particular interest to me are unikernels 
+				such as <a href="https://mirage.io">MirageOS</a>. 
+				</li>
+			</ul>
+
 		</p>
 	</div>
 	</body>
