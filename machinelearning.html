@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The importance of software and infrastructure in enabling machine learning progress.">
+    <title>Machine Learning Software · Patrick Krusiec</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Machine Learning</h1>
+
+        <p>
+            If you were to study machine learning in the 2000s, the most power method today, deep learning and neural networks,
+			would be almost absent from the curriculum. This is not only because there are more theorems to prove about Support Vector
+			Machines and Bayesian methods, but the compute infrastructure did not exist to support deep learning. If you want to create powerful
+			deep learning models you are constrained not by ideas about deep learning, but by two things:
+        </p>
+        <ul>
+            <li>Your ability to iterate on the architecture and model.</li>
+            <li>Your ability to train and serve the model efficiently.</li>
+        </ul>
+
+        <p>
+            These two factors are not independent; and these two factors are not only necessary for SOTA models. For deep 
+			learning models that aim to be highly efficient, both the infrastructure the model is run on and the architecture of the model itself
+			plays a crucial role. An example of this <a href="https://arxiv.org/pdf/1704.04861" target="_blank" rel="noopener noreferrer">MobileNet</a> –
+			a CNN created to run locally on smartphones.
+        </p>
+
+        <p>
+            You can speed the training and inference of models by creating infrastructure to run neural networks in parallel by
+			using heterogenous processor, such as GPUs and TPUs, and distributed over a set of machines connected over a network. 
+			You can speed the iteration of models by increasing the speed of training through infrastructure, and by providing an
+			interface to leverage that infrastructure. 1 millions threads on a GPU beat out 16 threads on a CPU, clusters beat out 
+			single machines, and PyTorch, with its dynamic computation graph, beat out TensorFlow.
+        </p>
+
+        <p>
+            But what excites me most about here is that there is more work to do. Custom ASICs for serving specific architectures are being designed.
+			Larger scaling, test time compute, and synthetic data generation will need software to enable it.
+			Bigger and bigger computing clusters are being built that will need to be utilized. Furthermore,
+			I believe that a key aspect of <a href="https://ndea.com" target="_blank" rel="noopener noreferrer">AGI will be program search</a>,
+			and that while we have the PyTorch for deep learning, we do not have the PyTorch for program search.
+        </p>
+
+        <p><a href="index.html">Back to About</a></p>
+    </div>
+</body>
+</html>

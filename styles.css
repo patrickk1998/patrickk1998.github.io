@@ -1,15 +1,101 @@
-p{
-font-family: "Helvetica", sans-serif;
+/* styles.css */
+
+body {
+    /* Define base font, background, text color, and line spacing */
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: rgb(236, 230, 222); /* Adjusted from invalid rgb(299, 299, 299) */
+    color: rgb(17, 17, 17); /* Dark text color */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add padding around the body content */
+    line-height: 1.6; /* Improve readability with line spacing */
 }
 
-li{
-font-family: "Helvetica", sans-serif;
-margin: 5px;
+.main {
+    /* Style the main content container */
+    max-width: 800px; /* Limit content width */
+    /* Align left on wider screens */
+    margin: 40px 0;
+    padding: 20px; /* Add padding inside the container */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners */
 }
 
-.main{
-margin:15px;
-max-width:800px;
-font-size:18px;
+.main img {
+    /* Style images within the main container */
+    display: block; /* Make image a block element */
+    /* Updated margin: Remove auto horizontal margins for left alignment */
+    margin: 0 0 20px 0; /* Add bottom margin only */
+    max-width: 100%; /* Ensure image scales down on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 240px; /* Limit maximum image height */
+    border-radius: 4px; /* Slightly rounded corners for images */
+}
+
+h1 {
+    /* Style main headings */
+    /* Updated text-align: Align heading to the left */
+    text-align: left;
+    margin-bottom: 30px; /* Add space below the heading */
+    color: rgb(17, 17, 17); /* Ensure heading uses the dark text color */
+}
+
+p, ul {
+    /* Style paragraphs and unordered lists */
+    margin-bottom: 15px; /* Add space below paragraphs and lists */
+}
+
+ul {
+    /* Style unordered lists */
+    padding-left: 20px; /* Indent list items */
+    list-style-type: disc; /* Use standard disc bullets */
+}
+
+li {
+    /* Style list items */
+    margin-bottom: 10px; /* Add space below each list item */
+}
+
+/* Updated Link Styles */
+a,
+a:visited { /* Style links and visited links */
+    color: inherit; /* Inherit color from parent (body text color) */
+    text-decoration: underline; /* Underline links by default */
+}
+
+a:hover,
+a:focus { /* Style links on hover/focus */
+    color: inherit; /* Ensure color remains the same */
+    text-decoration: none; /* Remove underline on hover/focus */
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce body padding on small screens */
+    }
+    .main {
+        /* Adjust margin for smaller screens */
+        margin: 20px 0;
+        padding: 15px; /* Reduce padding inside the main container */
+    }
+    h1 {
+        font-size: 1.8em; /* Slightly smaller heading size */
+    }
+    /* Ensure image and heading are left-aligned on mobile too */
+    .main img {
+        margin: 0 0 20px 0; /* Confirm left alignment */
+    }
+    h1 {
+        text-align: left; /* Confirm left alignment */
+    }
+}
+
+/* Media query for left alignment on wider screens (optional clarification) */
+@media (min-width: 840px) { /* 800px max-width + 2*20px body padding */
+    .main {
+       /* The margin: 40px 0; already achieves left alignment for the container */
+    }
 }
 
