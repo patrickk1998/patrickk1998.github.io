@@ -1,33 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="I am Patrick Krusiec, an undergraduate passionate about distributed computing, computer architecture, and operating systems.">
-    <title>About · Patrick Krusiec</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="main">
-	<img src="profile.jpeg" alt="Patrick Krusiec" height="240px">
-        <h1>About</h1>
+    <meta name="description" content="Patrick Krusiec — Math and Computer Science graduate interested in machine learning, low level programming, and compute infrastructure.">
+    <title>Patrick Krusiec</title>
+    <link rel="icon" href="data:,">
+    <style>
+      :root {
+        --ink: #30323a;
+        --muted: #62656e;
+        --rule: #d6d8dc;
+        --accent: #ff6a16;
+        --paper: #f7f7f6;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
 
-        <p>
-            Hello! My name is Patrick Krusiec. I am currently an undergraduate majoring in Computer Science and Mathematics at Northern Illinois University.
-			My software interests presently are generally focused on distributed computing, computer architecture and security, and operating systems.
-        </p>
+      * {
+        box-sizing: border-box;
+      }
 
-        <p>
-            I am currently have my attention on a variety of projects. A common theme with my work is that I am focused on solving problems that are hard,
-			require in depth knowledge and experimentation, and are open ended. I love working on problems like this, including my interest in <a href="filesystems.html">file systems</a>,
-			<a href="rustforlinux.html">Rust for Linux</a>, and <a href="machinelearning.html">software that enables machine learning</a>.
-        </p>
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-size: 16px;
+        line-height: 1.58;
+      }
 
-        <p>
-            I am always happy to talk about software, math, and <a href="problems.html">interesting problems</a>. Please contact me at patrick.krusiec@gmail.com.
-			I can be found on <a href="https://github.com/patrickk1998" target="_blank" rel="noopener noreferrer">Github</a> and <a href="https://www.linkedin.com/in/patrick-krusiec" 
-			target="_blank" rel="noopener noreferrer">LinkedIn</a>. 
-		</p>
-    </div>
-</body>
+      body::before {
+        content: "";
+        display: block;
+        height: 7px;
+        background: var(--accent);
+      }
+
+      .site-header {
+        height: 85px;
+        border-bottom: 1px solid var(--rule);
+        display: flex;
+        align-items: center;
+      }
+
+      .header-inner,
+      .main {
+        width: min(860px, calc(100vw - 98px));
+        margin: 0 auto;
+      }
+
+      .brand {
+        font-size: 29px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+
+      .main {
+        padding-top: 44px;
+        padding-bottom: 56px;
+      }
+
+      .intro {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .headshot {
+        width: 240px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        flex: 0 0 auto;
+      }
+
+      .kicker {
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: 44px;
+        line-height: 1.09;
+        font-weight: 800;
+      }
+
+      p {
+        margin: 0 0 14px;
+        color: #33363d;
+        font-size: 17px;
+        line-height: 1.58;
+        font-weight: 430;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
+      @media (max-width: 760px) {
+        .site-header {
+          height: auto;
+          padding: 22px 0 18px;
+        }
+
+        .header-inner,
+        .main {
+          width: min(100% - 36px, 860px);
+        }
+
+        .brand {
+          font-size: 26px;
+        }
+
+        .main {
+          padding-top: 30px;
+          padding-bottom: 36px;
+        }
+
+        .intro {
+          flex-direction: column;
+          gap: 26px;
+        }
+
+        .headshot {
+          width: 200px;
+        }
+
+        h1 {
+          font-size: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">PATRICK KRUSIEC</div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="intro">
+        <img class="headshot" src="headshot.jpeg" alt="Patrick Krusiec" width="1025" height="1280">
+        <div>
+          <div class="kicker">About</div>
+          <h1>Hello!</h1>
+          <p>
+            My name is Patrick Krusiec. I recently graduated with a double major in Math and Computer Science from Northern Illinois University.
+            I am interested in machine learning, low level programming, and building compute infrastructure.
+          </p>
+          <p>
+            I am always happy to talk about software, math, and <a href="problems.html">interesting problems</a>. Please contact me at
+            <a href="mailto:patrick.krusiec@gmail.com">patrick.krusiec@gmail.com</a>.
+            I can be found on <a href="https://github.com/patrickk1998" target="_blank" rel="noopener noreferrer">Github</a> and
+            <a href="https://www.linkedin.com/in/patrick-krusiec" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
